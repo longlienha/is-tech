@@ -1,0 +1,14 @@
+{
+    "name": "Họ Và Tên",
+    "sex": "Giới tính",
+    "birth_date": "Ngày Sinh",
+    "city": "Thành Phố",
+    "fb": "Link Faceboook cá nhân",
+    "isvnu": "Bạn có đang học tại VNU-IS ?",
+    "student_id": "Mã Số Sinh Viên",
+    "major": "Bạn đang học ngành nào ?",
+    "class": "Lớp",
+    "phone": "Số điện thoại",
+    "info": "Giới thiệu qua về bản thân",
+    "reason": "Lý do bạn muốn tham gia buổi thăm quan này?"
+}

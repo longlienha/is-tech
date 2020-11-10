@@ -1,0 +1,12 @@
+<!-- file này là file nháp cho dòng 2 main.js -->
+<div class = "Table">
+    <div class = "Row"  v-bind:style = "styleobj">
+        <div class = "Cell"><p>{{ itr.name }}</p></div>
+        <div class = "Cell"><p>{{ itr.birth_date }}</p></div>
+        <div class = "Cell"><p>{{ itr.stu_id }}</p></div>
+        <div class = "Cell"><p>{{ itr.sex }}</p></div>
+        <div class = "Cell"><p>
+            <button v-on:click = "$emit(\'removeelement\')">X</button>
+        </p></div>
+    </div>
+</div>

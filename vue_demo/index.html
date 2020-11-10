@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <title>VueJs Instance</title>
+      <script type = "text/javascript" src = "js/vue.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div id = "databinding" style = "">
+         <h1>Student Information</h1>
+         <span>Full Name</span>
+         <input type = "text" placeholder = "Full Name" v-model = "name"/>
+         <span>Birth Date</span>
+         <input type = "date" placeholder = "Birth Date" v-model = "birth_date"/>
+        <br>
+         <span>Student ID</span>
+         <input type = "text" placeholder = "Enter Address" v-model = "stu_id"/>
+         <span>Gender</span>
+         <select  v-model = "sex">
+             <option value="male">Male</option>
+             <option value="female">Female</option>
+         </select>
+         <br/>
+         <button v-on:click = "showdata" v-bind:style = "styleobj">Add</button>
+         <br/>
+         <br/>
+         <table>
+             <thead>
+                 <tr>
+                     <th>Name</th>
+                     <th>DoB</th>
+                     <th>Student ID</th>
+                     <th>Gender</th>
+                 </tr>
+             </thead>
+         </table>
+         <customercomponent
+                        v-for = "(item, index) in custdet"
+                        v-bind:item = "item"
+                        v-bind:index = "index"
+                        v-bind:itr = "item"
+                        v-bind:key = "item.fname"
+                        v-on:removeelement = "custdet.splice(index, 1)">
+                    </customercomponent>
+      </div>
+      
+      <script src="js/main.js"></script>
+   </body>
+</html>
